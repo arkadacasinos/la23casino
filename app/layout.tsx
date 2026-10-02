@@ -61,6 +61,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${playfair.variable} ${inter.variable}`}>
       <head>
+        <meta name="yandex-verification" content="4091289698df8c6e" />
         {/* Дополнительные пользовательские теги можно вставлять сюда */}
       </head>
       <body className="antialiased">{children}</body>
