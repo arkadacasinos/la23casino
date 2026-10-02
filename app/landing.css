@@ -1,0 +1,261 @@
+/* La Casino — собственные стили лендинга (mangled-префиксы x4v7-) */
+
+:root {
+  --x4v7-emerald: #0b2e22;
+  --x4v7-emerald-2: #123d2e;
+  --x4v7-gold: #d4af37;
+  --x4v7-gold-soft: #e6c96a;
+  --x4v7-cream: #f4ede0;
+  --x4v7-ink: #1b1b1b;
+  --x4v7-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--x4v7-cream);
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  background: var(--x4v7-cream);
+  color: var(--x4v7-ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.x4v7-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Шапка */
+.x4v7-head {
+  background: var(--x4v7-emerald);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.x4v7-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.x4v7-logo {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--x4v7-gold);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.x4v7-cta {
+  display: inline-block;
+  background: var(--x4v7-gold);
+  color: var(--x4v7-emerald);
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.x4v7-cta:hover {
+  background: var(--x4v7-gold-soft);
+  transform: translateY(-1px);
+}
+
+/* Герой */
+.x4v7-hero {
+  background: linear-gradient(160deg, var(--x4v7-emerald) 0%, var(--x4v7-emerald-2) 100%);
+  color: var(--x4v7-cream);
+  padding: 48px 20px 56px;
+}
+
+.x4v7-hero-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.x4v7-h1 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.18;
+  font-weight: 700;
+  color: var(--x4v7-white);
+  text-wrap: balance;
+}
+
+.x4v7-lead {
+  font-size: 1.05rem;
+  color: var(--x4v7-cream);
+  max-width: 640px;
+  text-wrap: pretty;
+}
+
+.x4v7-cta-big {
+  align-self: flex-start;
+  font-size: 1.05rem;
+  padding: 14px 30px;
+}
+
+.x4v7-hero-img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  margin-top: 28px;
+  border: 2px solid rgba(212, 175, 55, 0.35);
+  display: block;
+}
+
+/* Секции */
+.x4v7-sec {
+  padding: 48px 20px;
+}
+
+.x4v7-sec-light {
+  background: var(--x4v7-cream);
+  color: var(--x4v7-ink);
+}
+
+.x4v7-sec-dark {
+  background: var(--x4v7-emerald);
+  color: var(--x4v7-cream);
+}
+
+.x4v7-sec-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.x4v7-h2 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.x4v7-sec-light .x4v7-h2 {
+  color: var(--x4v7-emerald);
+}
+
+.x4v7-sec-dark .x4v7-h2 {
+  color: var(--x4v7-gold);
+}
+
+.x4v7-txt {
+  font-size: 1rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.x4v7-sec-dark .x4v7-txt {
+  color: var(--x4v7-cream);
+}
+
+.x4v7-img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 14px;
+  margin-top: 8px;
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  display: block;
+}
+
+/* Подвал */
+.x4v7-foot {
+  background: var(--x4v7-emerald);
+  color: var(--x4v7-cream);
+  padding: 40px 20px 48px;
+}
+
+.x4v7-foot-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.x4v7-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.x4v7-tag {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--x4v7-gold-soft);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.x4v7-tag:hover {
+  background: rgba(212, 175, 55, 0.22);
+}
+
+.x4v7-copy {
+  font-size: 0.85rem;
+  color: rgba(244, 237, 224, 0.6);
+}
+
+/* Планшет и десктоп */
+@media (min-width: 768px) {
+  .x4v7-h1 {
+    font-size: 2.75rem;
+  }
+
+  .x4v7-h2 {
+    font-size: 1.9rem;
+  }
+
+  .x4v7-hero {
+    padding: 72px 32px 80px;
+  }
+
+  .x4v7-sec {
+    padding: 72px 32px;
+  }
+
+  .x4v7-hero-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .x4v7-hero-img {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+}
